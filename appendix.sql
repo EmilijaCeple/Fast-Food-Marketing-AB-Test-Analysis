@@ -5,7 +5,7 @@ WITH
     promotion,
     ROUND(SUM(sales_in_thousands), 2) AS sales
   FROM
-    `turing_data_analytics.wa_marketing_campaign`
+    `wa_marketing_campaign`
   GROUP BY
     location_id,
     promotion)
